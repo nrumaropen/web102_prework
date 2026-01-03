@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Sea Monster Crowdfunding</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -8,15 +9,31 @@
 
   <body>
     <!-- header row with logo -->
-    <div class="header">
-        <img id="tentacles" src="assets/tentacles.png">
-        <h1 class="header-text">Sea Monster Crowdfunding</h1>
-    </div>
+    <header class="navbar">
+        <nav class="nav-links" role="navigation" aria-label="Primary Home">
+                <img id="tentacles" src="assets/tentacles.png">
+                <h1 class="header-text">Sea Monster Crowdfunding</h1>
+            <ul class="nav">
+                <li><a href="#description-container">About</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><button id="theme-button">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- background info about company -->
     <h2>Welcome to Sea Monster!</h2>
-    <div id="description-container">
-        <p>The purpose of our company is to fund independent games. We've been in operation for 12 years.</p>
+    <div class="content">
+        <div class="pic1">
+            <img src="assets/Picture1.png" alt="oct">
+        </div>
+        <div id="description-container">
+            <p>Our company’s purpose is to provide financial support to independent game developers who may not have access to traditional funding opportunities. 
+            For the past 12 years, we have worked to help creators bring original and innovative game ideas to life by connecting them with a community of supporters. 
+            Through our platform, developers are able to showcase their projects, raise the funds needed for development, and engage directly with backers who share an interest in independent gaming. 
+            Over time, our company has contributed to the growth of the independent game industry by promoting creativity, supporting diverse voices, 
+            and helping transform early-stage concepts into completed, playable games.</p>
+        </div>
     </div>
 
     <!-- top games & other interesting stats -->
@@ -48,8 +65,8 @@
     </div>
 
     <!-- list of games funded by Sea Monster -->
-    <h2>Our Games</h2>
-    <p>Check out each of our games below!</p>
+    <h2 id="games">Our Games</h2>
+    <p id="checkout">Check out each of our games below!</p>
     <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
